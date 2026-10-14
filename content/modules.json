@@ -2,26 +2,26 @@
   {
     "code": "VK",
     "title": "Vorbereitungskurs",
-    "description": "Ein verständlicher Einstieg in Islam, Îmân, Ibâda, Prophetentum, Ahlâk und Koran.",
+    "description": "Ein verständlicher Einstieg in Islam, Īmān, ‘Ibāda, Prophetentum, Ahlâq und Koran.",
     "topics": "Einführung in die islamische Lehre"
   },
   {
     "code": "01",
     "title": "Glaube & Persönlichkeit",
     "description": "Islamische Glaubenslehre, Charakterentwicklung und Spiritualität.",
-    "topics": "Akîda · Ahlâk · Spiritualität"
+    "topics": "Aqīda · Ahlâq · Spiritualität"
   },
   {
     "code": "02",
-    "title": "Religiöse Praxis & Sîra I",
+    "title": "Religiöse Praxis & Sīra I",
     "description": "Grundlagen der islamischen Religionspraxis und die Lebensgeschichte des Propheten Muhammad (s).",
-    "topics": "Ilm al-Hâl I · Sîra I"
+    "topics": "‘Ilm al-Hīl I · Sīra I"
   },
   {
     "code": "03",
-    "title": "Religiöse Praxis & Sîra II",
+    "title": "Religiöse Praxis & Sīra II",
     "description": "Weitere Fragen der Religionspraxis und die medinensische Zeit der prophetischen Biografie.",
-    "topics": "Ilm al-Hâl II · Sîra II"
+    "topics": "Ilm al-Hâl II · Sīra II"
   },
   {
     "code": "04",
