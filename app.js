@@ -9,7 +9,8 @@ const safeURL = (v) => {
   const s=String(v||'').trim();
   if (s.startsWith('#')) return s;
   if (/^https:\/\//i.test(s)) return s;
-  if (s.startsWith('/assets/')) return s;
+  if (s.startsWith('/assets/')) return s.substring(1);
+  if (s.startsWith('assets/')) return s;
   return '#kontakt';
 };
 const initials=(str)=>String(str||'Q').trim().split(/\s+/).filter(Boolean).slice(0,2).map(p=>p[0]).join('').toUpperCase();
