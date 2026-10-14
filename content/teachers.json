@@ -2,26 +2,26 @@
   {
     "name": "Mehmet Şahin",
     "subtitle": "IGMG Göppingen",
-    "photo": ""
+    "photo": "assets/mehmet-sahin.webp"
   },
   {
     "name": "Muhammed Arslan",
     "subtitle": "IGMG Möckmühl",
-    "photo": ""
+    "photo": "assets/muhammed-arslan.webp"
   },
   {
     "name": "Rıdvan Sarıkaya",
     "subtitle": "IGMG Rastatt",
-    "photo": ""
+    "photo": "assets/ridvan-sarikaya.webp"
   },
   {
     "name": "Seyfullah Nürk",
     "subtitle": "Lehrpersonal",
-    "photo": ""
+    "photo": "assets/seyfullah-nuerk.webp"
   },
   {
     "name": "Yusuf Ensar Ayten",
     "subtitle": "IGMG Karlsruhe",
-    "photo": ""
+    "photo": "assets/yusuf-ensar-ayten.webp"
   }
 ]
