@@ -1,0 +1,38 @@
+[
+  {
+    "code": "VK",
+    "title": "Vorbereitungskurs",
+    "description": "Ein verständlicher Einstieg in Islam, Îmân, Ibâda, Prophetentum, Ahlâk und Koran.",
+    "topics": "Einführung in die islamische Lehre"
+  },
+  {
+    "code": "01",
+    "title": "Glaube & Persönlichkeit",
+    "description": "Islamische Glaubenslehre, Charakterentwicklung und Spiritualität.",
+    "topics": "Akîda · Ahlâk · Spiritualität"
+  },
+  {
+    "code": "02",
+    "title": "Religiöse Praxis & Sîra I",
+    "description": "Grundlagen der islamischen Religionspraxis und die Lebensgeschichte des Propheten Muhammad (s).",
+    "topics": "Ilm al-Hâl I · Sîra I"
+  },
+  {
+    "code": "03",
+    "title": "Religiöse Praxis & Sîra II",
+    "description": "Weitere Fragen der Religionspraxis und die medinensische Zeit der prophetischen Biografie.",
+    "topics": "Ilm al-Hâl II · Sîra II"
+  },
+  {
+    "code": "04",
+    "title": "Koran & Überlieferung",
+    "description": "Zugänge zum Koran sowie Grundlagen von Hadith und Sunna.",
+    "topics": "Hadith · Sunna · Koranisches Wissen"
+  },
+  {
+    "code": "05",
+    "title": "Islam in Europa & Koranlesen",
+    "description": "Muslimisches Leben in Europa und eine Einführung in das Lesen des Korans.",
+    "topics": "Islam in Europa · Koranlesen"
+  }
+]

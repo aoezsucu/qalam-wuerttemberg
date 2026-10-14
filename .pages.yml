@@ -1,0 +1,86 @@
+# Qalam Württemberg — Inhalte ohne Programmierung auf https://app.pagescms.org bearbeiten
+media:
+  input: assets/uploads
+  output: /assets/uploads
+  rename: safe
+  categories: [image]
+
+content:
+  - name: homepage
+    label: Startseite & Kontakt
+    type: file
+    path: content/home.json
+    format: json
+    fields:
+      - { name: brand, label: Name der Akademie, type: string }
+      - { name: tagline, label: Motto, type: string }
+      - { name: heroEyebrow, label: Kleine Zeile oben, type: string }
+      - { name: heroTitle, label: Große Überschrift, type: string }
+      - { name: heroAccent, label: Zweite Zeile (kursiv), type: string }
+      - { name: heroLead, label: Einleitung, type: text }
+      - { name: heroNote, label: Hinweise unter der Überschrift, type: string }
+      - { name: aboutTitle, label: Über Qalam — Überschrift, type: string }
+      - { name: aboutText, label: Über Qalam — Absatz 1, type: text }
+      - { name: aboutTextSecond, label: Über Qalam — Absatz 2, type: text }
+      - { name: missionQuote, label: Zitat, type: text }
+      - { name: moduleIntro, label: Module — Einleitung, type: text }
+      - { name: contactTitle, label: Kontakt — Überschrift, type: string }
+      - { name: contactText, label: Kontakt — Beschreibung, type: text }
+      - { name: instagramUrl, label: Instagram Link, type: string }
+      - { name: contactEmail, label: Kontakt E-Mail (optional), type: string }
+      - { name: imprintResponsible, label: Impressum — Verantwortlicher Träger, type: string }
+      - { name: imprintAddress, label: Impressum — Anschrift, type: text }
+      - { name: privacyContact, label: Datenschutz — Kontakt, type: string }
+
+  - name: modules
+    label: Kursmodule
+    type: file
+    path: content/modules.json
+    format: json
+    list: true
+    fields:
+      - { name: code, label: Kennzeichnung, type: string }
+      - { name: title, label: Titel, type: string }
+      - { name: description, label: Beschreibung, type: text }
+      - { name: topics, label: Themen, type: string }
+  - name: teaching
+    label: Lehrpersonal
+    type: file
+    path: content/teachers.json
+    format: json
+    list: true
+    fields:
+      - { name: name, label: Name, type: string }
+      - { name: subtitle, label: Institution oder Rolle, type: string }
+      - { name: photo, label: Foto, type: image }
+  - name: management
+    label: Qalam Team
+    type: file
+    path: content/team.json
+    format: json
+    list: true
+    fields:
+      - { name: name, label: Name, type: string }
+      - { name: subtitle, label: Aufgabe, type: string }
+      - { name: photo, label: Foto, type: image }
+  - name: news
+    label: Aktuelles & Meldungen
+    type: file
+    path: content/news.json
+    format: json
+    list: true
+    fields:
+      - { name: date, label: Datum / Kategorie, type: string }
+      - { name: title, label: Überschrift, type: string }
+      - { name: description, label: Kurztext, type: text }
+      - { name: url, label: Link (optional), type: string }
+  - name: values
+    label: Unsere Werte
+    type: file
+    path: content/values.json
+    format: json
+    list: true
+    fields:
+      - { name: number, label: Nummer, type: string }
+      - { name: title, label: Überschrift, type: string }
+      - { name: description, label: Beschreibung, type: text }
