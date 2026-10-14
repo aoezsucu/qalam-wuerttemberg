@@ -27,6 +27,7 @@ content:
       - { name: contactTitle, label: Kontakt — Überschrift, type: string }
       - { name: contactText, label: Kontakt — Beschreibung, type: text }
       - { name: instagramUrl, label: Instagram Link, type: string }
+      - { name: registrationUrl, label: Kursanmeldung (Tally-Link), type: string }
       - { name: contactEmail, label: Kontakt E-Mail (optional), type: string }
       - { name: imprintResponsible, label: Impressum — Verantwortlicher Träger, type: string }
       - { name: imprintAddress, label: Impressum — Anschrift, type: text }
@@ -84,3 +85,18 @@ content:
       - { name: number, label: Nummer, type: string }
       - { name: title, label: Überschrift, type: string }
       - { name: description, label: Beschreibung, type: text }
+  - name: schedule
+    label: Unterrichtsplan & Termine
+    type: file
+    path: content/schedule.json
+    format: json
+    list: true
+    fields:
+      - { name: date, label: Datum / Tag, type: string }
+      - { name: time, label: Uhrzeit, type: string }
+      - { name: title, label: Unterricht / Thema, type: string }
+      - { name: topics, label: Inhalte / Beschreibung, type: text }
+      - { name: teacher, label: Referent, type: string }
+      - { name: format, label: Form (Online / Präsenz), type: string }
+      - { name: place, label: Ort / Zoom-Info, type: string }
+      - { name: link, label: Link (optional), type: string }

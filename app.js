@@ -27,20 +27,30 @@ function renderPeople(id,items){
  const root=document.getElementById(id);if(!root||!Array.isArray(items))return;
  root.innerHTML=items.map(x=>`<article class="people-card"><div class="people-avatar">${x.photo&&safeURL(x.photo)!=='#kontakt'?`<img loading="lazy" src="${escapeHTML(safeURL(x.photo))}" alt="Porträt von ${escapeHTML(x.name)}">`:`<span class="initials" aria-hidden="true">${escapeHTML(initials(x.name))}</span>`}</div><h4 class="person-name">${escapeHTML(x.name)}</h4><p class="person-subtitle">${escapeHTML(x.subtitle)}</p></article>`).join('');
 }
+function renderSchedule(items){
+ const root=document.getElementById('schedule-grid');
+ if(!root || !Array.isArray(items) || items.length===0) return;
+ const rows=items.filter(x=>x && (x.title || x.date));
+ if(!rows.length) return;
+ root.innerHTML=rows.map(x=>{
+  const link=x.link && /^https:\/\//i.test(String(x.link).trim())?`<a href="${escapeHTML(safeURL(x.link))}" target="_blank" rel="noopener noreferrer">Weitere Informationen ↗</a>`:'';
+  return `<article class="schedule-card"><div class="schedule-card-top"><span class="schedule-date">${escapeHTML(x.date||'Termin')}</span>${x.format?`<span class="schedule-mode">${escapeHTML(x.format)}</span>`:''}</div><h3>${escapeHTML(x.title||'Unterricht')}</h3>${x.topics?`<p class="schedule-subject">${escapeHTML(x.topics)}</p>`:''}<div class="schedule-details">${x.time?`<span><strong>Uhrzeit:</strong> ${escapeHTML(x.time)}</span>`:''}${x.teacher?`<span><strong>Referent:</strong> ${escapeHTML(x.teacher)}</span>`:''}${x.place?`<span><strong>Ort:</strong> ${escapeHTML(x.place)}</span>`:''}</div>${link}</article>`;
+ }).join('');
+}
 function renderNews(items){
  const root=document.getElementById('news-grid');if(!root||!Array.isArray(items))return;
  root.innerHTML=items.map(x=>`<a class="news-card" href="${escapeHTML(safeURL(x.url))}" ${/^https:\/\//.test(safeURL(x.url))?'target="_blank" rel="noopener noreferrer"':''}><span class="news-date">${escapeHTML(x.date)}</span><h3>${escapeHTML(x.title)}</h3><p>${escapeHTML(x.description)}</p><span class="news-arrow" aria-hidden="true">↗</span></a>`).join('');
 }
 async function init(){
- const tasks=await Promise.allSettled(['home','modules','values','teachers','team','news'].map(fetchJSON));
+ const tasks=await Promise.allSettled(['home','modules','values','teachers','team','news','schedule'].map(fetchJSON));
  const get=i=>tasks[i].status==='fulfilled'?tasks[i].value:null;
  const home=get(0);
  if(home){
   ['brand','tagline','heroEyebrow','heroTitle','heroAccent','heroLead','heroNote','aboutTitle','aboutText','aboutTextSecond','missionQuote','moduleIntro','contactTitle','contactText'].forEach(key=>{if(home[key]!==undefined)putText(key,home[key]);});
+  const registration=/^https:\/\//i.test(String(home.registrationUrl||''))?safeURL(home.registrationUrl):'https://tally.so/r/zxpljE';
+  document.querySelectorAll('.registration-link').forEach(el=>el.setAttribute('href',registration));
   const instagram=safeURL(home.instagramUrl||'https://www.instagram.com/qalam.wuerttemberg/');
   for(const id of ['news-instagram','contact-insta'])document.getElementById(id)?.setAttribute('href',instagram);
-  const button=document.getElementById('main-contact');
-  if(button){if(home.contactEmail && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(home.contactEmail)){button.href='mailto:'+home.contactEmail;button.removeAttribute('target');button.textContent='E-Mail schreiben ↗';}else button.href=instagram;}
   if(document.body.dataset.page==='legal'){
    const legal=document.getElementById('legal-details');
    if(legal){
@@ -50,7 +60,7 @@ async function init(){
    }
   }
  }
- if(get(1))renderModules(get(1));if(get(2))renderValues(get(2));if(get(3))renderPeople('teachers-grid',get(3));if(get(4))renderPeople('team-grid',get(4));if(get(5))renderNews(get(5));
+ if(get(1))renderModules(get(1));if(get(2))renderValues(get(2));if(get(3))renderPeople('teachers-grid',get(3));if(get(4))renderPeople('team-grid',get(4));if(get(5))renderNews(get(5));if(get(6))renderSchedule(get(6));
 }
 const toggle=document.querySelector('.nav-toggle');
 const nav=document.getElementById('main-nav');

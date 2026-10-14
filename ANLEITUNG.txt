@@ -1,0 +1,27 @@
+QALAM WÜRTTEMBERG — SITE-UPDATE V1.2
+
+Änderungen: Kursanmeldung mit Tally; neuer Abschnitt "Unterricht & Termine"; über Pages CMS pflegbarer Unterrichtsplan.
+
+So lädst du das Update auf GitHub hoch:
+
+A) Öffne https://github.com/aoezsucu/qalam-wuerttemberg
+   Klicke "Add file" > "Upload files". Lade diese 4 Dateien direkt ins Hauptverzeichnis hoch:
+   index.html, styles.css, app.js, .pages.yml
+   GitHub kann fragen, ob bestehende Dateien ersetzt werden sollen. Bestätige und wähle "Commit changes".
+
+B) Öffne den Ordner https://github.com/aoezsucu/qalam-wuerttemberg/tree/main/content
+   Klicke "Add file" > "Upload files". Lade 2 Dateien aus dem entpackten Ordner "content" hoch:
+   home.json und schedule.json
+   Klicke "Commit changes".
+
+C) Kontrolliere nach 1–3 Minuten die Website:
+   https://aoezsucu.github.io/qalam-wuerttemberg/
+   "Jetzt anmelden" sollte auf https://tally.so/r/zxpljE verlinken.
+   Der Bereich "Unterricht & Termine" wird zunächst ohne konkrete Termine angezeigt, damit nichts erfunden wird.
+
+D) In https://app.pagescms.org/ das Projekt öffnen:
+   - "Startseite & Kontakt": Feld "Kursanmeldung (Tally-Link)" bearbeiten
+   - "Unterrichtsplan & Termine": Termine, Uhrzeiten, Lehrer, Orte und Kurslinks bearbeiten
+   Die Änderungen werden über GitHub Pages veröffentlicht.
+
+WICHTIG: Noch keine personenbezogenen Anmeldedaten im GitHub-Repository speichern. Das Impressum und die Datenschutzerklärung vor Veröffentlichung öffentlich bewerben rechtlich vervollständigen und prüfen. Nur autorisierte Fotos verwenden.
