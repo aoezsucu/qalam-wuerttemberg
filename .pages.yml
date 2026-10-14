@@ -1,7 +1,7 @@
 # Qalam Württemberg — Inhalte ohne Programmierung auf https://app.pagescms.org bearbeiten
 media:
   input: assets/uploads
-  output: /assets/uploads
+  output: assets/uploads
   rename: safe
   categories: [image]
 
