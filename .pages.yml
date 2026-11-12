@@ -100,3 +100,815 @@ content:
       - { name: format, label: Form (Online / Präsenz), type: string }
       - { name: place, label: Ort / Zoom-Info, type: string }
       - { name: link, label: Link (optional), type: string }
+
+  - name: new-to-islam
+    label: Neu im Islam
+    type: file
+    path: neu-im-islam-content.json
+    format: json
+    fields:
+    - name: einstieg
+      label: Einleitung
+      type: object
+      fields:
+      - name: text_01
+        label: Text · Einleitung
+        type: text
+      - name: text_02
+        label: Überschrift · Neu im Islam.Du bist willkommen. · Teil 1
+        type: string
+      - name: text_03
+        label: Überschrift · Neu im Islam.Du bist willkommen. · Teil 2
+        type: string
+      - name: text_04
+        label: Text · Neu im Islam.Du bist willkommen.
+        type: text
+    - name: glaube
+      label: Glaube und Schahada
+      type: object
+      fields:
+      - name: text_01
+        label: Text · Glaube und Schahada
+        type: text
+      - name: text_02
+        label: Überschrift · Ein bewusster Schritt.
+        type: string
+      - name: text_03
+        label: Text · Ein bewusster Schritt.
+        type: text
+      - name: text_04
+        label: Text · Ein bewusster Schritt.
+        type: text
+      - name: text_05
+        label: Text · Ein bewusster Schritt.
+        type: string
+      - name: text_06
+        label: Text · Ein bewusster Schritt.
+        type: text
+      - name: text_07
+        label: Text · Ein bewusster Schritt.
+        type: text
+      - name: text_08
+        label: Arabisch · Ein bewusster Schritt.
+        type: text
+      - name: text_09
+        label: Text · Ein bewusster Schritt.
+        type: text
+      - name: text_10
+        label: Text · Ein bewusster Schritt.
+        type: text
+      - name: text_11
+        label: Text · Ein bewusster Schritt.
+        type: string
+    - name: gemeinschaft
+      label: Gemeinschaft
+      type: object
+      fields:
+      - name: text_01
+        label: Text · Gemeinschaft
+        type: text
+      - name: text_02
+        label: Überschrift · Ein Glaube. Menschen an deiner Seite.
+        type: string
+      - name: text_03
+        label: Überschrift · Kontakt aufnehmen
+        type: string
+      - name: text_04
+        label: Text · Kontakt aufnehmen
+        type: text
+      - name: text_05
+        label: Überschrift · Gemeinsam bezeugen
+        type: string
+      - name: text_06
+        label: Text · Gemeinsam bezeugen
+        type: text
+      - name: text_07
+        label: Überschrift · Auf Wunsch dokumentieren
+        type: string
+      - name: text_08
+        label: Text · Auf Wunsch dokumentieren
+        type: text
+      - name: text_09
+        label: Text · Auf Wunsch dokumentieren · Teil 1
+        type: text
+      - name: text_10
+        label: Text · Auf Wunsch dokumentieren · Teil 2
+        type: text
+    - name: name
+      label: Name
+      type: object
+      fields:
+      - name: text_01
+        label: Text · Name
+        type: text
+      - name: text_02
+        label: Überschrift · Du darfst deinen Namen behalten.
+        type: string
+      - name: text_03
+        label: Text · Du darfst deinen Namen behalten.
+        type: text
+      - name: text_04
+        label: Text · Du darfst deinen Namen behalten. · Teil 1
+        type: text
+      - name: text_05
+        label: Text · Du darfst deinen Namen behalten. · Teil 2
+        type: text
+    - name: ghusl
+      label: Ghusl
+      type: object
+      fields:
+      - name: text_01
+        label: Text · Ghusl
+        type: text
+      - name: text_02
+        label: Überschrift · Ghusl. Ein bewusster Anfang.
+        type: string
+      - name: text_03
+        label: Text · Ghusl. Ein bewusster Anfang.
+        type: text
+      - name: text_04
+        label: Text · Ghusl. Ein bewusster Anfang.
+        type: string
+      - name: text_05
+        label: Text · Ghusl. Ein bewusster Anfang.
+        type: text
+      - name: text_06
+        label: Überschrift · Vorbereiten
+        type: string
+      - name: text_07
+        label: Text · Vorbereiten
+        type: text
+      - name: text_08
+        label: Überschrift · Mund ausspülen
+        type: string
+      - name: text_09
+        label: Text · Mund ausspülen
+        type: text
+      - name: text_10
+        label: Überschrift · Nase mit Wasser reinigen
+        type: string
+      - name: text_11
+        label: Text · Nase mit Wasser reinigen
+        type: text
+      - name: text_12
+        label: Überschrift · Abdest nehmen
+        type: string
+      - name: text_13
+        label: Text · Abdest nehmen
+        type: text
+      - name: text_14
+        label: Überschrift · Ganzer Körper
+        type: string
+      - name: text_15
+        label: Text · Ganzer Körper
+        type: text
+      - name: text_16
+        label: Text · Ganzer Körper · Teil 1
+        type: text
+      - name: text_17
+        label: Text · Ganzer Körper · Teil 2
+        type: text
+    - name: wudu
+      label: Abdest
+      type: object
+      fields:
+      - name: text_01
+        label: Text · Abdest
+        type: text
+      - name: text_02
+        label: Überschrift · Abdest. Bereit für das Gebet.
+        type: string
+      - name: text_03
+        label: Text · Abdest. Bereit für das Gebet.
+        type: text
+      - name: text_04
+        label: Überschrift · Hände
+        type: string
+      - name: text_05
+        label: Text · Hände
+        type: text
+      - name: text_06
+        label: Überschrift · Mund
+        type: string
+      - name: text_07
+        label: Text · Mund
+        type: text
+      - name: text_08
+        label: Überschrift · Nase
+        type: string
+      - name: text_09
+        label: Text · Nase
+        type: text
+      - name: text_10
+        label: Überschrift · Gesicht
+        type: string
+      - name: text_11
+        label: Text · Gesicht
+        type: text
+      - name: text_12
+        label: Überschrift · Arme
+        type: string
+      - name: text_13
+        label: Text · Arme
+        type: text
+      - name: text_14
+        label: Überschrift · Kopf
+        type: string
+      - name: text_15
+        label: Text · Kopf
+        type: text
+      - name: text_16
+        label: Überschrift · Ohren
+        type: string
+      - name: text_17
+        label: Text · Ohren
+        type: text
+      - name: text_18
+        label: Überschrift · Füße
+        type: string
+      - name: text_19
+        label: Text · Füße
+        type: text
+      - name: text_20
+        label: Überschrift · Wann brauche ich eine neue Gebetswaschung?
+        type: string
+      - name: text_21
+        label: Text · Wann brauche ich eine neue Gebetswaschung?
+        type: text
+      - name: text_22
+        label: Text · Wann brauche ich eine neue Gebetswaschung? · Teil 1
+        type: text
+      - name: text_23
+        label: Text · Wann brauche ich eine neue Gebetswaschung? · Teil 2
+        type: text
+    - name: gebet
+      label: Gebet und Vorbereitung
+      type: object
+      fields:
+      - name: text_01
+        label: Text · Gebet und Vorbereitung
+        type: text
+      - name: text_02
+        label: Überschrift · Ein Gebet.Zwei Lernwege. · Teil 1
+        type: string
+      - name: text_03
+        label: Überschrift · Ein Gebet.Zwei Lernwege. · Teil 2
+        type: string
+      - name: text_04
+        label: Text · Ein Gebet.Zwei Lernwege. · Teil 1
+        type: text
+      - name: text_05
+        label: Text · Ein Gebet.Zwei Lernwege. · Teil 2
+        type: text
+      - name: text_06
+        label: Text · Ein Gebet.Zwei Lernwege. · Teil 3
+        type: text
+      - name: text_07
+        label: Überschrift · Vor dem Beginn
+        type: string
+      - name: text_08
+        label: Text · Vor dem Beginn
+        type: text
+      - name: text_09
+        label: Text · Vor dem Beginn
+        type: text
+      - name: text_10
+        label: Text · Vor dem Beginn
+        type: text
+      - name: text_11
+        label: Text · Vor dem Beginn
+        type: text
+      - name: text_12
+        label: Text · Vor dem Beginn
+        type: text
+      - name: text_13
+        label: Text · Vor dem Beginn
+        type: string
+      - name: text_14
+        label: Text · Vor dem Beginn
+        type: text
+      - name: text_15
+        label: Text · Vor dem Beginn · Teil 1
+        type: text
+      - name: text_16
+        label: Text · Vor dem Beginn · Teil 2
+        type: text
+      - name: text_17
+        label: Überschrift · Was lese ich?
+        type: string
+      - name: text_18
+        label: Text · Was lese ich?
+        type: text
+      - name: text_19
+        label: Überschrift · Im Stehen
+        type: string
+      - name: text_20
+        label: Text · Im Stehen
+        type: text
+      - name: text_21
+        label: Überschrift · Verbeugung
+        type: string
+      - name: text_22
+        label: Arabisch · Verbeugung
+        type: text
+      - name: text_23
+        label: Text · Verbeugung
+        type: text
+      - name: text_24
+        label: Überschrift · Niederwerfung
+        type: string
+      - name: text_25
+        label: Arabisch · Niederwerfung
+        type: text
+      - name: text_26
+        label: Text · Niederwerfung
+        type: text
+      - name: text_27
+        label: Überschrift · Abschließendes Sitzen
+        type: string
+      - name: text_28
+        label: Text · Abschließendes Sitzen
+        type: text
+      - name: text_29
+        label: Text · Abschließendes Sitzen
+        type: text
+    - name: maenner
+      label: Gebetsablauf · Männer
+      type: object
+      fields:
+      - name: text_01
+        label: Überschrift · Namaz · Männer
+        type: string
+      - name: text_02
+        label: Text · Namaz · Männer
+        type: text
+      - name: text_03
+        label: Text · Namaz · Männer
+        type: text
+      - name: text_04
+        label: Überschrift · Beginn · Takbīr
+        type: string
+      - name: text_05
+        label: Text · Beginn · Takbīr
+        type: text
+      - name: text_06
+        label: Überschrift · Stehen · Qiyām
+        type: string
+      - name: text_07
+        label: Text · Stehen · Qiyām
+        type: text
+      - name: text_08
+        label: Überschrift · Verbeugung · Rukūʿ
+        type: string
+      - name: text_09
+        label: Text · Verbeugung · Rukūʿ
+        type: text
+      - name: text_10
+        label: Überschrift · Aufrichten
+        type: string
+      - name: text_11
+        label: Text · Aufrichten
+        type: text
+      - name: text_12
+        label: Überschrift · Erste Niederwerfung
+        type: string
+      - name: text_13
+        label: Text · Erste Niederwerfung
+        type: text
+      - name: text_14
+        label: Überschrift · Kurzes Sitzen
+        type: string
+      - name: text_15
+        label: Text · Kurzes Sitzen
+        type: text
+      - name: text_16
+        label: Überschrift · Zweite Niederwerfung
+        type: string
+      - name: text_17
+        label: Text · Zweite Niederwerfung
+        type: text
+      - name: text_18
+        label: Überschrift · Zweite Rakʿa
+        type: string
+      - name: text_19
+        label: Text · Zweite Rakʿa
+        type: text
+      - name: text_20
+        label: Überschrift · Verbeugung · Rukūʿ
+        type: string
+      - name: text_21
+        label: Text · Verbeugung · Rukūʿ
+        type: text
+      - name: text_22
+        label: Überschrift · Aufrichten
+        type: string
+      - name: text_23
+        label: Text · Aufrichten
+        type: text
+      - name: text_24
+        label: Überschrift · Erste Niederwerfung
+        type: string
+      - name: text_25
+        label: Text · Erste Niederwerfung
+        type: text
+      - name: text_26
+        label: Überschrift · Kurzes Sitzen
+        type: string
+      - name: text_27
+        label: Text · Kurzes Sitzen
+        type: text
+      - name: text_28
+        label: Überschrift · Zweite Niederwerfung
+        type: string
+      - name: text_29
+        label: Text · Zweite Niederwerfung
+        type: text
+      - name: text_30
+        label: Überschrift · Abschließendes Sitzen
+        type: string
+      - name: text_31
+        label: Text · Abschließendes Sitzen
+        type: text
+      - name: text_32
+        label: Überschrift · Abschluss · Salām
+        type: string
+      - name: text_33
+        label: Text · Abschluss · Salām
+        type: text
+    - name: frauen
+      label: Gebetsablauf · Frauen
+      type: object
+      fields:
+      - name: text_01
+        label: Überschrift · Namaz · Frauen
+        type: string
+      - name: text_02
+        label: Text · Namaz · Frauen
+        type: text
+      - name: text_03
+        label: Text · Namaz · Frauen
+        type: text
+      - name: text_04
+        label: Überschrift · Beginn · Takbīr
+        type: string
+      - name: text_05
+        label: Text · Beginn · Takbīr
+        type: text
+      - name: text_06
+        label: Überschrift · Stehen · Qiyām
+        type: string
+      - name: text_07
+        label: Text · Stehen · Qiyām
+        type: text
+      - name: text_08
+        label: Überschrift · Verbeugung · Rukūʿ
+        type: string
+      - name: text_09
+        label: Text · Verbeugung · Rukūʿ
+        type: text
+      - name: text_10
+        label: Überschrift · Aufrichten
+        type: string
+      - name: text_11
+        label: Text · Aufrichten
+        type: text
+      - name: text_12
+        label: Überschrift · Erste Niederwerfung
+        type: string
+      - name: text_13
+        label: Text · Erste Niederwerfung
+        type: text
+      - name: text_14
+        label: Überschrift · Kurzes Sitzen
+        type: string
+      - name: text_15
+        label: Text · Kurzes Sitzen
+        type: text
+      - name: text_16
+        label: Überschrift · Zweite Niederwerfung
+        type: string
+      - name: text_17
+        label: Text · Zweite Niederwerfung
+        type: text
+      - name: text_18
+        label: Überschrift · Zweite Rakʿa
+        type: string
+      - name: text_19
+        label: Text · Zweite Rakʿa
+        type: text
+      - name: text_20
+        label: Überschrift · Verbeugung · Rukūʿ
+        type: string
+      - name: text_21
+        label: Text · Verbeugung · Rukūʿ
+        type: text
+      - name: text_22
+        label: Überschrift · Aufrichten
+        type: string
+      - name: text_23
+        label: Text · Aufrichten
+        type: text
+      - name: text_24
+        label: Überschrift · Erste Niederwerfung
+        type: string
+      - name: text_25
+        label: Text · Erste Niederwerfung
+        type: text
+      - name: text_26
+        label: Überschrift · Kurzes Sitzen
+        type: string
+      - name: text_27
+        label: Text · Kurzes Sitzen
+        type: text
+      - name: text_28
+        label: Überschrift · Zweite Niederwerfung
+        type: string
+      - name: text_29
+        label: Text · Zweite Niederwerfung
+        type: text
+      - name: text_30
+        label: Überschrift · Abschließendes Sitzen
+        type: string
+      - name: text_31
+        label: Text · Abschließendes Sitzen
+        type: text
+      - name: text_32
+        label: Überschrift · Abschluss · Salām
+        type: string
+      - name: text_33
+        label: Text · Abschluss · Salām
+        type: text
+    - name: gebetstexte
+      label: Gebetstexte und Übersetzungen
+      type: object
+      fields:
+      - name: text_01
+        label: Überschrift · Gebetstexte zum Mitlernen
+        type: string
+      - name: text_02
+        label: Text · Gebetstexte zum Mitlernen
+        type: text
+      - name: text_03
+        label: Überschrift · Eröffnungsgebet · Subḥānaka
+        type: string
+      - name: text_04
+        label: Arabisch · Eröffnungsgebet · Subḥānaka
+        type: text
+      - name: text_05
+        label: Umschrift · Eröffnungsgebet · Subḥānaka · Teil 1
+        type: text
+      - name: text_06
+        label: Umschrift · Eröffnungsgebet · Subḥānaka · Teil 2
+        type: text
+      - name: text_07
+        label: Text · Eröffnungsgebet · Subḥānaka · Teil 1
+        type: text
+      - name: text_08
+        label: Text · Eröffnungsgebet · Subḥānaka · Teil 2
+        type: text
+      - name: text_09
+        label: Überschrift · Schutzformel und Basmala
+        type: string
+      - name: text_10
+        label: Arabisch · Schutzformel und Basmala · Teil 1
+        type: text
+      - name: text_11
+        label: Arabisch · Schutzformel und Basmala · Teil 2
+        type: text
+      - name: text_12
+        label: Umschrift · Schutzformel und Basmala · Teil 1
+        type: text
+      - name: text_13
+        label: Umschrift · Schutzformel und Basmala · Teil 2
+        type: text
+      - name: text_14
+        label: Text · Schutzformel und Basmala · Teil 1
+        type: text
+      - name: text_15
+        label: Text · Schutzformel und Basmala · Teil 2
+        type: text
+      - name: text_16
+        label: Überschrift · Al-Fātiḥa · in beiden Rakʿa
+        type: string
+      - name: text_17
+        label: Arabisch · Al-Fātiḥa · in beiden Rakʿa
+        type: text
+      - name: text_18
+        label: Umschrift · Al-Fātiḥa · in beiden Rakʿa · Teil 1
+        type: text
+      - name: text_19
+        label: Umschrift · Al-Fātiḥa · in beiden Rakʿa · Teil 2
+        type: text
+      - name: text_20
+        label: Text · Al-Fātiḥa · in beiden Rakʿa · Teil 1
+        type: text
+      - name: text_21
+        label: Text · Al-Fātiḥa · in beiden Rakʿa · Teil 2
+        type: text
+      - name: text_22
+        label: Überschrift · Kurze Sure · al-Iḫlāṣ
+        type: string
+      - name: text_23
+        label: Arabisch · Kurze Sure · al-Iḫlāṣ
+        type: text
+      - name: text_24
+        label: Umschrift · Kurze Sure · al-Iḫlāṣ · Teil 1
+        type: text
+      - name: text_25
+        label: Umschrift · Kurze Sure · al-Iḫlāṣ · Teil 2
+        type: text
+      - name: text_26
+        label: Text · Kurze Sure · al-Iḫlāṣ · Teil 1
+        type: text
+      - name: text_27
+        label: Text · Kurze Sure · al-Iḫlāṣ · Teil 2
+        type: text
+      - name: text_28
+        label: Überschrift · Tašahhud · im abschließenden Sitzen
+        type: string
+      - name: text_29
+        label: Arabisch · Tašahhud · im abschließenden Sitzen
+        type: text
+      - name: text_30
+        label: Umschrift · Tašahhud · im abschließenden Sitzen · Teil 1
+        type: text
+      - name: text_31
+        label: Umschrift · Tašahhud · im abschließenden Sitzen · Teil 2
+        type: text
+      - name: text_32
+        label: Text · Tašahhud · im abschließenden Sitzen · Teil 1
+        type: text
+      - name: text_33
+        label: Text · Tašahhud · im abschließenden Sitzen · Teil 2
+        type: text
+      - name: text_34
+        label: Überschrift · Segensgebete · Ṣalawāt
+        type: string
+      - name: text_35
+        label: Arabisch · Segensgebete · Ṣalawāt · Teil 1
+        type: text
+      - name: text_36
+        label: Arabisch · Segensgebete · Ṣalawāt · Teil 2
+        type: text
+      - name: text_37
+        label: Umschrift · Segensgebete · Ṣalawāt · Teil 1
+        type: text
+      - name: text_38
+        label: Umschrift · Segensgebete · Ṣalawāt · Teil 2
+        type: text
+      - name: text_39
+        label: Text · Segensgebete · Ṣalawāt · Teil 1
+        type: text
+      - name: text_40
+        label: Text · Segensgebete · Ṣalawāt · Teil 2
+        type: text
+      - name: text_41
+        label: Überschrift · Bittgebet · ein Beispiel
+        type: string
+      - name: text_42
+        label: Arabisch · Bittgebet · ein Beispiel
+        type: text
+      - name: text_43
+        label: Umschrift · Bittgebet · ein Beispiel · Teil 1
+        type: text
+      - name: text_44
+        label: Umschrift · Bittgebet · ein Beispiel · Teil 2
+        type: text
+      - name: text_45
+        label: Text · Bittgebet · ein Beispiel · Teil 1
+        type: text
+      - name: text_46
+        label: Text · Bittgebet · ein Beispiel · Teil 2
+        type: text
+    - name: gebetszeiten
+      label: Fünf Pflichtgebete
+      type: object
+      fields:
+      - name: text_01
+        label: Überschrift · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_02
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_03
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_04
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_05
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_06
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_07
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_08
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_09
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_10
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_11
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_12
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_13
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_14
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_15
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_16
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_17
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_18
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_19
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: string
+      - name: text_20
+        label: Text · Die fünf täglichen Pflichtgebete
+        type: text
+    - name: kontakt
+      label: Kontakt
+      type: object
+      fields:
+      - name: text_01
+        label: Text · Kontakt
+        type: text
+      - name: text_02
+        label: Überschrift · Deine Fragen sind willkommen.
+        type: string
+      - name: text_03
+        label: Text · Deine Fragen sind willkommen.
+        type: text
+    - name: quellen
+      label: Quellen und Hinweise
+      type: object
+      fields:
+      - name: text_01
+        label: Text · Quellen und Hinweise
+        type: text
+      - name: text_02
+        label: Überschrift · Quellen & Einordnung
+        type: string
+      - name: text_03
+        label: Text · Quellen & Einordnung
+        type: text
+      - name: text_04
+        label: Überschrift · IGMG · Einstieg in Gebet und Reinigung
+        type: string
+      - name: text_05
+        label: Text · IGMG · Einstieg in Gebet und Reinigung
+        type: text
+      - name: text_06
+        label: Text · IGMG · Einstieg in Gebet und Reinigung
+        type: text
+      - name: text_07
+        label: Text · IGMG · Einstieg in Gebet und Reinigung
+        type: text
+      - name: text_08
+        label: Text · IGMG · Einstieg in Gebet und Reinigung
+        type: text
+      - name: text_09
+        label: Überschrift · Ergänzende Quellen zu einzelnen Schritten
+        type: string
+      - name: text_10
+        label: Text · Ergänzende Quellen zu einzelnen Schritten
+        type: text
+      - name: text_11
+        label: Text · Ergänzende Quellen zu einzelnen Schritten
+        type: text
+      - name: text_12
+        label: Text · Ergänzende Quellen zu einzelnen Schritten
+        type: text
+      - name: text_13
+        label: Text · Ergänzende Quellen zu einzelnen Schritten
+        type: text
+      - name: text_14
+        label: Text · Ergänzende Quellen zu einzelnen Schritten
+        type: text
+      - name: text_15
+        label: Text · Ergänzende Quellen zu einzelnen Schritten
+        type: text
+      - name: text_16
+        label: Text · Ergänzende Quellen zu einzelnen Schritten
+        type: text
+      - name: text_17
+        label: Text · Ergänzende Quellen zu einzelnen Schritten
+        type: text
